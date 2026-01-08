@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7000 Kcal Challenge - 이용약관</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6; color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .card { background: #fff; border-radius: 16px; padding: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        .header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #f0f0f0; }
+        .logo { font-size: 48px; margin-bottom: 10px; }
+        h1 { color: #1a1a2e; font-size: 28px; margin-bottom: 10px; }
+        .subtitle { color: #666; font-size: 14px; }
+        .lang-switch { display: flex; justify-content: center; gap: 10px; margin: 20px 0; }
+        .lang-btn { padding: 8px 20px; border: 2px solid #22d3ee; background: #fff; color: #22d3ee; border-radius: 20px; cursor: pointer; font-weight: 600; transition: all 0.3s; }
+        .lang-btn.active, .lang-btn:hover { background: #22d3ee; color: #fff; }
+        .content { display: none; }
+        .content.active { display: block; }
+        h2 { color: #22d3ee; font-size: 18px; margin: 30px 0 15px 0; padding-left: 15px; border-left: 4px solid #22d3ee; }
+        h3 { color: #444; font-size: 16px; margin: 20px 0 10px 0; }
+        p { margin-bottom: 15px; color: #555; }
+        ul { margin: 10px 0 15px 20px; color: #555; }
+        li { margin-bottom: 8px; }
+        .highlight { background: #f8f9fa; padding: 15px 20px; border-radius: 8px; margin: 15px 0; }
+        .warning { background: #fff3cd; padding: 15px 20px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ffc107; }
+        .contact-box { background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%); color: #fff; padding: 20px; border-radius: 12px; margin-top: 30px; }
+        .contact-box h3 { color: #fff; margin-top: 0; }
+        .contact-box a { color: #fff; text-decoration: underline; }
+        .footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="logo">🔥</div>
+                <h1>7000 Kcal Challenge</h1>
+                <p class="subtitle">이용약관 / Terms of Service</p>
+            </div>
+
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('ko')">한국어</button>
+                <button class="lang-btn" onclick="switchLang('en')">English</button>
+            </div>
+
+            <!-- Korean Content -->
+            <div id="content-ko" class="content active">
+                <p style="text-align: center; color: #999;">최종 수정일: 2026년 1월 8일</p>
+
+                <p>본 이용약관은 7000 Kcal Challenge(이하 "앱")의 이용 조건 및 절차, 이용자와 앱 간의 권리와 의무 등을 규정합니다.</p>
+
+                <h2>제1조 (목적)</h2>
+                <p>본 약관은 앱이 제공하는 칼로리 소모 챌린지 서비스의 이용과 관련하여 앱과 이용자 간의 권리, 의무 및 책임 사항을 규정함을 목적으로 합니다.</p>
+
+                <h2>제2조 (용어의 정의)</h2>
+                <ul>
+                    <li><strong>서비스:</strong> 앱에서 제공하는 칼로리 추적, 챌린지, 배틀, 레이드 등 모든 기능</li>
+                    <li><strong>이용자:</strong> 앱에 가입하여 서비스를 이용하는 자</li>
+                    <li><strong>포인트:</strong> 서비스 내에서 획득하고 사용할 수 있는 가상 재화</li>
+                    <li><strong>구독:</strong> 정기 결제를 통한 프리미엄 서비스 이용</li>
+                </ul>
+
+                <h2>제3조 (서비스의 제공)</h2>
+                <p>앱은 다음 서비스를 제공합니다:</p>
+                <ul>
+                    <li>Apple Health/Google Fit 연동을 통한 칼로리 소모량 추적</li>
+                    <li>7000 Kcal 챌린지 및 기타 건강 목표 설정</li>
+                    <li>다른 이용자와의 배틀 및 레이드 참여</li>
+                    <li>일일/주간 미션 및 업적 시스템</li>
+                    <li>포인트 획득 및 프리미엄 구독</li>
+                </ul>
+
+                <h2>제4조 (회원가입 및 계정)</h2>
+                <ul>
+                    <li>이용자는 Apple ID, Google 계정, 또는 전화번호로 가입할 수 있습니다</li>
+                    <li>만 14세 미만은 서비스를 이용할 수 없습니다</li>
+                    <li>계정 정보는 본인만 사용해야 하며, 타인에게 양도할 수 없습니다</li>
+                    <li>계정 보안은 이용자 본인의 책임입니다</li>
+                </ul>
+
+                <h2>제5조 (건강 데이터 사용)</h2>
+                <div class="warning">
+                    <p>앱은 Apple Health(HealthKit)와 연동하여 활동 에너지, 걸음 수, 심박수 데이터를 읽습니다. 이 데이터는:</p>
+                    <ul>
+                        <li>챌린지 진행 상황 추적에만 사용됩니다</li>
+                        <li>로컬 기기에 저장되며 외부 서버로 전송되지 않습니다</li>
+                        <li>의료적 조언이나 진단 목적으로 사용되지 않습니다</li>
+                    </ul>
+                </div>
+
+                <h2>제6조 (유료 서비스 및 구독)</h2>
+                <ul>
+                    <li>Pro 구독은 자동 갱신됩니다</li>
+                    <li>구독 취소는 Apple App Store 설정에서 가능합니다</li>
+                    <li>환불은 Apple의 환불 정책에 따릅니다</li>
+                    <li>포인트로 Pro 구독을 교환할 수 있습니다</li>
+                </ul>
+
+                <h2>제7조 (이용자의 의무)</h2>
+                <p>이용자는 다음 행위를 하여서는 안 됩니다:</p>
+                <ul>
+                    <li>타인의 정보를 도용하거나 허위 정보 등록</li>
+                    <li>서비스를 부정한 방법으로 이용</li>
+                    <li>다른 이용자에게 불쾌감을 주는 행위</li>
+                    <li>앱의 정상적인 운영을 방해하는 행위</li>
+                    <li>건강 데이터를 조작하거나 부정하게 챌린지 참여</li>
+                </ul>
+
+                <h2>제8조 (서비스 중단)</h2>
+                <p>앱은 다음 경우 서비스를 일시 중단할 수 있습니다:</p>
+                <ul>
+                    <li>시스템 점검, 보수, 교체가 필요한 경우</li>
+                    <li>천재지변, 국가비상사태 등 불가항력적 사유</li>
+                    <li>기타 운영상 서비스 중단이 필요한 경우</li>
+                </ul>
+
+                <h2>제9조 (면책조항)</h2>
+                <div class="highlight">
+                    <ul>
+                        <li>앱은 의료 서비스가 아닙니다. 건강 관련 결정은 전문 의료인과 상담하세요.</li>
+                        <li>건강 데이터의 정확성은 연동된 기기와 플랫폼에 따라 달라질 수 있습니다.</li>
+                        <li>이용자의 과도한 운동으로 인한 부상에 대해 앱은 책임지지 않습니다.</li>
+                        <li>제3자 서비스(Apple Health, AdMob 등)의 장애에 대해 앱은 책임지지 않습니다.</li>
+                    </ul>
+                </div>
+
+                <h2>제10조 (계정 해지)</h2>
+                <ul>
+                    <li>이용자는 언제든지 계정을 해지할 수 있습니다</li>
+                    <li>계정 해지 시 모든 데이터는 30일 이내 삭제됩니다</li>
+                    <li>남은 구독 기간에 대한 환불은 Apple 정책에 따릅니다</li>
+                </ul>
+
+                <h2>제11조 (약관의 변경)</h2>
+                <p>본 약관은 법령 또는 서비스 변경에 따라 수정될 수 있습니다. 변경 시 앱 내 공지를 통해 7일 전 안내드립니다.</p>
+
+                <h2>제12조 (문의처)</h2>
+                <div class="contact-box">
+                    <h3>서비스 관련 문의</h3>
+                    <ul>
+                        <li>이메일: <a href="mailto:kaylim7633@gmail.com">kaylim7633@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <p>본 이용약관은 2026년 1월 8일부터 적용됩니다.</p>
+                </div>
+            </div>
+
+            <!-- English Content -->
+            <div id="content-en" class="content">
+                <p style="text-align: center; color: #999;">Last Updated: January 8, 2026</p>
+
+                <p>These Terms of Service govern your use of 7000 Kcal Challenge ("App") and establish the rights and obligations between you and the App.</p>
+
+                <h2>1. Purpose</h2>
+                <p>These Terms govern the rights, obligations, and responsibilities between the App and users regarding the calorie burn challenge service.</p>
+
+                <h2>2. Definitions</h2>
+                <ul>
+                    <li><strong>Service:</strong> All features provided by the App including calorie tracking, challenges, battles, and raids</li>
+                    <li><strong>User:</strong> Anyone who registers and uses the Service</li>
+                    <li><strong>Points:</strong> Virtual currency earned and used within the Service</li>
+                    <li><strong>Subscription:</strong> Premium service access through recurring payments</li>
+                </ul>
+
+                <h2>3. Service Provision</h2>
+                <p>The App provides the following services:</p>
+                <ul>
+                    <li>Calorie burn tracking via Apple Health/Google Fit integration</li>
+                    <li>7000 Kcal Challenge and other health goal setting</li>
+                    <li>Battle and Raid participation with other users</li>
+                    <li>Daily/weekly missions and achievement system</li>
+                    <li>Points earning and premium subscription</li>
+                </ul>
+
+                <h2>4. Account Registration</h2>
+                <ul>
+                    <li>Users may register via Apple ID, Google account, or phone number</li>
+                    <li>Users under 14 years of age may not use the Service</li>
+                    <li>Account credentials must be used only by the account owner and cannot be transferred</li>
+                    <li>Account security is the user's responsibility</li>
+                </ul>
+
+                <h2>5. Health Data Usage</h2>
+                <div class="warning">
+                    <p>The App integrates with Apple Health (HealthKit) to read active energy, step count, and heart rate data. This data:</p>
+                    <ul>
+                        <li>Is used only for tracking challenge progress</li>
+                        <li>Is stored locally on your device and NOT transmitted to external servers</li>
+                        <li>Is NOT used for medical advice or diagnosis</li>
+                    </ul>
+                </div>
+
+                <h2>6. Paid Services and Subscriptions</h2>
+                <ul>
+                    <li>Pro subscription auto-renews</li>
+                    <li>Subscription cancellation is available in Apple App Store settings</li>
+                    <li>Refunds follow Apple's refund policy</li>
+                    <li>Points can be exchanged for Pro subscription</li>
+                </ul>
+
+                <h2>7. User Obligations</h2>
+                <p>Users must NOT:</p>
+                <ul>
+                    <li>Use others' information or register false information</li>
+                    <li>Use the Service fraudulently</li>
+                    <li>Engage in behavior that disturbs other users</li>
+                    <li>Interfere with normal App operations</li>
+                    <li>Manipulate health data or fraudulently participate in challenges</li>
+                </ul>
+
+                <h2>8. Service Interruption</h2>
+                <p>The App may temporarily suspend service when:</p>
+                <ul>
+                    <li>System maintenance, repair, or replacement is needed</li>
+                    <li>Force majeure events occur (natural disasters, national emergencies)</li>
+                    <li>Other operational reasons require service suspension</li>
+                </ul>
+
+                <h2>9. Disclaimers</h2>
+                <div class="highlight">
+                    <ul>
+                        <li>The App is NOT a medical service. Consult healthcare professionals for health-related decisions.</li>
+                        <li>Health data accuracy depends on connected devices and platforms.</li>
+                        <li>The App is not responsible for injuries from excessive exercise.</li>
+                        <li>The App is not responsible for third-party service failures (Apple Health, AdMob, etc.).</li>
+                    </ul>
+                </div>
+
+                <h2>10. Account Termination</h2>
+                <ul>
+                    <li>Users may terminate their account at any time</li>
+                    <li>All data will be deleted within 30 days of account termination</li>
+                    <li>Refunds for remaining subscription periods follow Apple's policy</li>
+                </ul>
+
+                <h2>11. Changes to Terms</h2>
+                <p>These Terms may be modified due to legal or service changes. Users will be notified 7 days in advance through the App.</p>
+
+                <h2>12. Contact</h2>
+                <div class="contact-box">
+                    <h3>Service Inquiries</h3>
+                    <ul>
+                        <li>Email: <a href="mailto:kaylim7633@gmail.com">kaylim7633@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <p>These Terms of Service are effective as of January 8, 2026.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('content-' + lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

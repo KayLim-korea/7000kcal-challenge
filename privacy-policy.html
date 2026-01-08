@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7000 Kcal Challenge - 개인정보 처리방침</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: #1a1a2e;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .lang-btn {
+            padding: 8px 20px;
+            border: 2px solid #22d3ee;
+            background: #fff;
+            color: #22d3ee;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .lang-btn.active {
+            background: #22d3ee;
+            color: #fff;
+        }
+        .lang-btn:hover {
+            background: #22d3ee;
+            color: #fff;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        h2 {
+            color: #22d3ee;
+            font-size: 18px;
+            margin: 30px 0 15px 0;
+            padding-left: 15px;
+            border-left: 4px solid #22d3ee;
+        }
+        h3 {
+            color: #444;
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        ul {
+            margin: 10px 0 15px 20px;
+            color: #555;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .warning {
+            background: #fff3cd;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+            color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+        .contact-box h3 {
+            color: #fff;
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="logo">🔥</div>
+                <h1>7000 Kcal Challenge</h1>
+                <p class="subtitle">개인정보 처리방침 / Privacy Policy</p>
+            </div>
+
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('ko')">한국어</button>
+                <button class="lang-btn" onclick="switchLang('en')">English</button>
+            </div>
+
+            <!-- Korean Content -->
+            <div id="content-ko" class="content active">
+                <p style="text-align: center; color: #999;">최종 수정일: 2026년 1월 8일</p>
+
+                <p>7000 Kcal Challenge(이하 "앱")는 이용자의 개인정보를 중요시하며, 개인정보보호법 및 관련 법령을 준수합니다. 본 개인정보 처리방침은 앱이 수집하는 정보와 그 활용 방법에 대해 설명합니다.</p>
+
+                <h2>1. 수집하는 개인정보 항목</h2>
+                <p>앱은 서비스 제공을 위해 다음과 같은 정보를 수집합니다:</p>
+
+                <h3>가. 필수 정보</h3>
+                <ul>
+                    <li>이메일 주소 (계정 생성 및 로그인)</li>
+                    <li>닉네임/표시 이름</li>
+                    <li>프로필 사진 (선택)</li>
+                </ul>
+
+                <h3>나. 건강 데이터 (Apple Health 연동)</h3>
+                <div class="warning">
+                    <strong>HealthKit 데이터 사용</strong><br>
+                    앱은 Apple Health(HealthKit)와 연동하여 다음 데이터를 읽습니다:
+                    <ul>
+                        <li>활동 에너지 소모량 (Active Energy Burned)</li>
+                        <li>걸음 수 (Step Count)</li>
+                        <li>심박수 (Heart Rate)</li>
+                    </ul>
+                    이 데이터는 칼로리 챌린지 진행 상황 추적에만 사용되며, 외부 서버로 전송되지 않습니다.
+                </div>
+
+                <h3>다. 자동 수집 정보</h3>
+                <ul>
+                    <li>기기 정보 (기기 유형, 운영체제)</li>
+                    <li>앱 사용 기록</li>
+                    <li>푸시 알림 토큰</li>
+                </ul>
+
+                <h2>2. 광고 및 추적</h2>
+                <div class="highlight">
+                    <p>앱은 Google AdMob을 통해 광고를 표시합니다. 광고 개인화를 위해:</p>
+                    <ul>
+                        <li>IDFA (Identifier for Advertisers)를 사용할 수 있습니다</li>
+                        <li>앱 시작 시 추적 권한을 요청합니다</li>
+                        <li>추적을 거부해도 앱 사용에 제한이 없습니다 (비개인화 광고 표시)</li>
+                    </ul>
+                </div>
+
+                <h2>3. 개인정보의 수집 및 이용 목적</h2>
+                <p>수집된 개인정보는 다음 목적으로 이용됩니다:</p>
+                <ul>
+                    <li>회원 가입 및 계정 관리</li>
+                    <li>칼로리 소모 챌린지 서비스 제공</li>
+                    <li>배틀/레이드 등 게임 기능 제공</li>
+                    <li>진행 상황 추적 및 통계 제공</li>
+                    <li>푸시 알림 발송</li>
+                    <li>고객 문의 응대</li>
+                    <li>서비스 개선 및 신규 기능 개발</li>
+                </ul>
+
+                <h2>4. 개인정보의 보관 및 파기</h2>
+                <div class="highlight">
+                    <ul>
+                        <li><strong>보관 기간:</strong> 회원 탈퇴 시까지</li>
+                        <li><strong>파기 방법:</strong> 회원 탈퇴 요청 시 30일 이내 모든 개인정보를 파기합니다</li>
+                        <li>관련 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관합니다</li>
+                    </ul>
+                </div>
+
+                <h2>5. 개인정보의 제3자 제공</h2>
+                <p>앱은 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, 다음의 경우에는 예외로 합니다:</p>
+                <ul>
+                    <li>이용자가 사전에 동의한 경우</li>
+                    <li>법령에 의해 요구되는 경우</li>
+                </ul>
+
+                <h2>6. 개인정보 처리 위탁</h2>
+                <p>앱은 서비스 제공을 위해 다음 업체에 개인정보 처리를 위탁합니다:</p>
+                <ul>
+                    <li><strong>Google Firebase:</strong> 데이터 저장 및 인증 서비스</li>
+                    <li><strong>Google AdMob:</strong> 광고 서비스</li>
+                    <li><strong>RevenueCat:</strong> 구독 결제 관리</li>
+                    <li><strong>Apple:</strong> 결제 처리 (인앱 구매 시)</li>
+                </ul>
+
+                <h2>7. 이용자의 권리</h2>
+                <p>이용자는 다음과 같은 권리를 행사할 수 있습니다:</p>
+                <ul>
+                    <li>개인정보 열람 요청</li>
+                    <li>개인정보 수정 요청</li>
+                    <li>개인정보 삭제 요청 (회원 탈퇴)</li>
+                    <li>개인정보 처리 정지 요청</li>
+                    <li>광고 추적 거부 (설정 > 개인 정보 보호 > 추적)</li>
+                </ul>
+                <p>권리 행사는 앱 내 설정 또는 고객센터를 통해 가능합니다.</p>
+
+                <h2>8. 개인정보의 안전성 확보 조치</h2>
+                <p>앱은 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취합니다:</p>
+                <ul>
+                    <li>개인정보의 암호화</li>
+                    <li>접근 권한 관리</li>
+                    <li>보안 프로그램 설치 및 갱신</li>
+                    <li>Firebase 보안 규칙 적용</li>
+                </ul>
+
+                <h2>9. 아동의 개인정보 보호</h2>
+                <p>앱은 만 14세 미만 아동의 개인정보를 수집하지 않습니다. 만 14세 미만임이 확인될 경우 해당 정보를 즉시 삭제합니다.</p>
+
+                <h2>10. 개인정보 처리방침의 변경</h2>
+                <p>본 개인정보 처리방침은 법령 또는 서비스 변경에 따라 수정될 수 있습니다. 변경 시 앱 내 공지를 통해 안내드립니다.</p>
+
+                <h2>11. 문의처</h2>
+                <div class="contact-box">
+                    <h3>개인정보 관련 문의</h3>
+                    <p>개인정보 관련 문의사항은 아래로 연락해 주세요:</p>
+                    <ul>
+                        <li>이메일: <a href="mailto:kaylim7633@gmail.com">kaylim7633@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <p>본 개인정보 처리방침은 2026년 1월 8일부터 적용됩니다.</p>
+                </div>
+            </div>
+
+            <!-- English Content -->
+            <div id="content-en" class="content">
+                <p style="text-align: center; color: #999;">Last Updated: January 8, 2026</p>
+
+                <p>7000 Kcal Challenge ("App") values your privacy and is committed to protecting your personal information. This Privacy Policy explains what information we collect and how we use it.</p>
+
+                <h2>1. Information We Collect</h2>
+
+                <h3>a. Information You Provide</h3>
+                <ul>
+                    <li>Email address (for account creation and login)</li>
+                    <li>Display name/nickname</li>
+                    <li>Profile photo (optional)</li>
+                </ul>
+
+                <h3>b. Health Data (Apple Health Integration)</h3>
+                <div class="warning">
+                    <strong>HealthKit Data Usage</strong><br>
+                    The App integrates with Apple Health (HealthKit) to read the following data:
+                    <ul>
+                        <li>Active Energy Burned</li>
+                        <li>Step Count</li>
+                        <li>Heart Rate</li>
+                    </ul>
+                    This data is used solely to track your calorie challenge progress and is NOT transmitted to external servers.
+                </div>
+
+                <h3>c. Automatically Collected Information</h3>
+                <ul>
+                    <li>Device information (device type, operating system)</li>
+                    <li>App usage data</li>
+                    <li>Push notification tokens</li>
+                </ul>
+
+                <h2>2. Advertising and Tracking</h2>
+                <div class="highlight">
+                    <p>The App displays advertisements through Google AdMob. For personalized ads:</p>
+                    <ul>
+                        <li>We may use IDFA (Identifier for Advertisers)</li>
+                        <li>The App requests tracking permission on first launch</li>
+                        <li>Declining tracking does not limit app functionality (non-personalized ads will be shown)</li>
+                    </ul>
+                </div>
+
+                <h2>3. How We Use Your Information</h2>
+                <p>We use collected information to:</p>
+                <ul>
+                    <li>Create and manage your account</li>
+                    <li>Provide calorie burn challenge services</li>
+                    <li>Enable Battle/Raid game features</li>
+                    <li>Track progress and provide statistics</li>
+                    <li>Send push notifications</li>
+                    <li>Respond to customer inquiries</li>
+                    <li>Improve services and develop new features</li>
+                </ul>
+
+                <h2>4. Data Retention and Deletion</h2>
+                <div class="highlight">
+                    <ul>
+                        <li><strong>Retention Period:</strong> Until account deletion</li>
+                        <li><strong>Deletion:</strong> All personal data is deleted within 30 days of account deletion request</li>
+                        <li>Data may be retained longer if required by law</li>
+                    </ul>
+                </div>
+
+                <h2>5. Third-Party Sharing</h2>
+                <p>We do not sell your personal information. We may share data with:</p>
+                <ul>
+                    <li>Service providers who assist in app operations</li>
+                    <li>Legal authorities when required by law</li>
+                </ul>
+
+                <h2>6. Third-Party Services</h2>
+                <p>The App uses the following third-party services:</p>
+                <ul>
+                    <li><strong>Google Firebase:</strong> Data storage and authentication</li>
+                    <li><strong>Google AdMob:</strong> Advertising services</li>
+                    <li><strong>RevenueCat:</strong> Subscription payment management</li>
+                    <li><strong>Apple:</strong> Payment processing (for in-app purchases)</li>
+                </ul>
+
+                <h2>7. Your Rights</h2>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal information</li>
+                    <li>Correct inaccurate information</li>
+                    <li>Delete your account and data</li>
+                    <li>Opt-out of marketing communications</li>
+                    <li>Opt-out of ad tracking (Settings > Privacy > Tracking)</li>
+                </ul>
+                <p>Exercise these rights through the app settings or by contacting us.</p>
+
+                <h2>8. Data Security</h2>
+                <p>We implement security measures including:</p>
+                <ul>
+                    <li>Encryption of personal data</li>
+                    <li>Access control management</li>
+                    <li>Regular security updates</li>
+                    <li>Firebase security rules</li>
+                </ul>
+
+                <h2>9. Children's Privacy</h2>
+                <p>The App is not intended for children under 14. We do not knowingly collect information from children under 14. If we discover such data, it will be deleted immediately.</p>
+
+                <h2>10. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy periodically. Changes will be notified through the App.</p>
+
+                <h2>11. Contact Us</h2>
+                <div class="contact-box">
+                    <h3>Privacy Inquiries</h3>
+                    <p>For privacy-related inquiries, please contact us:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:kaylim7633@gmail.com">kaylim7633@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <p>This Privacy Policy is effective as of January 8, 2026.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+
+            document.getElementById('content-' + lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
